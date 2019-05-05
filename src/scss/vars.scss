@@ -1,0 +1,96 @@
+// ---------------------------
+// Global variables
+// ---------------------------
+// Font
+
+$mainFont                	: 'PTSans', sans-serif;
+$secondFont         		  : 'Circe', sans-serif;
+$thirdFont								: 'Georgia', serif;
+
+// Size
+$mainFontColor           : #101010;
+$mainFontSize            : 18px;
+$mainFontWeight          : 400;
+$mainLineHeight          : 1.4;
+
+$desktopWidth            : 1280px;
+$smDesktopWidth          : 980px;
+$tableWidth              : 768px;
+$phoneWidth              : 480px;
+$smPhoneWidth            : 320px;
+
+// Main color
+$default-color           : #ffffff;
+$primary-color           : #444ce0;
+$success-color           : #ABCD4D;
+// $danger-color            : #fc5c65;
+$warning-color           :#ff503f;
+// $light-color             : #999999;
+$primary-background            : #fff;
+$secondary-background            : #F1F1F1;
+
+// Neutral Color
+$neutral-primary         : #303133;
+$neutral-regular         : #606266;
+$neutral-secondary       : #909399;
+$neutral-placeholder     : #C0C4CC;
+
+// Border Color
+$border-base             : red;
+// $border-base             : grey;
+// $border-light            : #E4E7ED;
+// $border-lighter          : #EBEEF5;
+// $border-lightex          : #F2F6FC;
+
+
+
+
+
+// Colors
+// ---------------------------
+
+// Gray
+$black: 		#000;
+$darkGray: 		#65615d;
+$darkDarkGray:  #241e18;
+$gray: 			#75726e;
+$grayShade:		#c2c0ba;
+$grayTint:		#f6f4f0;
+$grayPastel:	#f8f7f4;
+$whiteGray: 	#f2f0e9;
+$white: 		#fff;
+
+// Blue
+
+// Red
+$orange: 		#e98e19;
+$orangeShade:   #a46412;
+$orangeTint: 	#f0b05e;
+$orangePastel:  #fbe8d1;
+
+// Green
+$green: 		#3a9c61;
+$greenDark: 	#296e44;
+$greenLight:	#75ba90;
+$greenPastel:	#d8ebdf;
+
+// Brand colors
+$prime: $green;
+$primeShade: $greenDark;
+$primeTint: $greenLight;
+$primePaster: $greenPastel;
+$second: $orange;
+$secondShade: $orangeShade;
+$third: $darkDarkGray;
+
+// Hover effects
+$hoverEffect: 10%;
+
+// Size
+$mainContainer: 140rem;
+
+// Indents updated
+// --------------------------------------------------
+$containerHorIndent: 11.5rem;
+$containerVerIndent: 10rem
+

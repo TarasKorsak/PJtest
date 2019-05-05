@@ -1,0 +1,21 @@
+.css-sprite-icon_drop
+{
+background:url('css-sprite-combined.png') 0px -7px;
+width:59px;height:74px;
+display:inline-block;
+}
+
+.css-sprite-icon_heart
+{
+background:url('css-sprite-combined.png') -59px -0px;
+width:81px;height:81px;
+display:inline-block;
+}
+
+.css-sprite-icon_leaf
+{
+background:url('css-sprite-combined.png') -140px -16px;
+width:65px;height:65px;
+display:inline-block;
+}
+

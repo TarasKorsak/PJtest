@@ -1,0 +1,35 @@
+.cardsprite-card1
+{
+background:url('css-sprite-combined.jpg') 0px -0px;
+width:200px;height:382px;
+display:inline-block;
+}
+
+.cardsprite-card2
+{
+background:url('css-sprite-combined.jpg') -200px -0px;
+width:200px;height:382px;
+display:inline-block;
+}
+
+.cardsprite-card3
+{
+background:url('css-sprite-combined.jpg') -400px -0px;
+width:200px;height:382px;
+display:inline-block;
+}
+
+.cardsprite-card4
+{
+background:url('css-sprite-combined.jpg') -600px -0px;
+width:200px;height:382px;
+display:inline-block;
+}
+
+.cardsprite-card5
+{
+background:url('css-sprite-combined.jpg') -800px -0px;
+width:200px;height:382px;
+display:inline-block;
+}
+

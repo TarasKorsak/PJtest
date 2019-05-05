@@ -1,0 +1,12 @@
+mixin card(data)
+	each val in data
+		div(class='card ' + val.starsQuantity + ' ' + val.header )
+			h3= val.header
+			p= val.description
+			.prices
+				.oldPrice= val.oldPrice
+				.newPrice= val.newPrice
+mixin navbar(some)
+	ul
+		each val in some
+			li= val

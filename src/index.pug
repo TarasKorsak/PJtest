@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+html(lang="en")
+	head
+		meta(charset="UTF-8")
+		meta(name="viewport", content="width=device-width, initial-scale=1.0")
+		meta(http-equiv="X-UA-Compatible", content="ie=edge")
+		link(href="css/index.min.css", rel="stylesheet")
+		include pug_components/mixins.pug
+		title test
+	body
+		include pug_components/content.pug
+		nav
+			p.logo
+				span moun
+				|tains
+			+navbar(navItems)
+			button.callUs call us
+		hero
+			h1 travel with us
+			p to the Mountains
+			p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta, eveniet consequatur cupiditate iure pariatur esse!
+			button.orderNow order now
+		section.about
+			h2 about us
+			p Lorem ipsum dolor sit amet consectetur adipisicing elit. A cupiditate non eaque similique modi natus consequuntur nihil consequatur autem eos!
+			button read more
+			img(src="./img/blog_img1.jpg", alt="img1")
+			img(src="./img/blog_img2.jpg", alt="img2")
+		section.journal
+			h2 our journal
+			.postsBlock
+				img(src="./img/post1.jpg", alt="post1")
+				article
+					p.title love
+					h3 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+					p You know how to make best coffee in the universe? Or, maybe you’re very good in designing gloves? Tell everyone about your experience and skills.
+					p.number 01
+				img(src="./img/post2.jpg", alt="post2")
+				article
+					p.title tree
+					h3 Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+					p The way to a successful brand is hard, but always very interesting. Share the full story of your project – from the very first day until now.
+					p.number 02
+				img(src="./img/post3.jpg", alt="post3")
+				article
+					p.title WATER
+					h3 LITTLE PIECES OF OUR PROUDNESS
+					p What do you do better than your competitors? What are you proud of? What details and advantages of your product you want people to know about?
+					p.number 1
+		section.order
+			h3 DO YOU WANNA GO?
+			p Aliquam sed posuere urna, et gravida nisl. Praesent interdum nisl libero, pretium egestas purus eleifend vitae. Mauris suscipit vel lectus at luctus.
+			form(action="#")
+				input(type="text" placeholder='Your name')
+				input(type="text" placeholder='Your phone')
+				button(type='submit') order now
+		section.scheme
+			h2 HOW WE WORK
+			.stagesContainer
+				.stage
+					h4 Lorem ipsum dolor sit
+					p amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+				.stage
+					h4 Lorem ipsum dolor sit
+					p amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+				.stage
+					h4 Lorem ipsum dolor sit
+					p amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+				.stage
+					h4 Lorem ipsum dolor sit
+					p amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+		section.proposition
+			h2 TRAVEL WITH US
+			+card(data)
+		section.gallery
+			h2 gallery
+			img(src="./img/gallery_group.png", alt="gallery")
+		section.logos
+			img(src="./img/logo1.webp", alt="slack")
+			img(src="./img/logo2.webp", alt="adobe")
+			img(src="./img/logo3.webp", alt="google")
+			img(src="./img/logo4.webp", alt="facebook")
+			img(src="./img/logo5.webp", alt="spotify")
+			img(src="./img/logo6.webp", alt="nike")
+		section.testimonials
+			h2 our clients say
+			.bqcontainer
+				blockquote
+					p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do  enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse 
+					footer
+						img(src="./img/testimonials1.jpg", alt="photo1")
+						cite
+							a(href="https://www.behance.net/gallery/27999261/Mountains-Landing-Page-FREE-(psd)", title="title") 
+								b Pavliv Yaroslav
+								|Web designer
+				blockquote
+					p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do  enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse 
+					footer
+						img(src="./img/testimonials2.jpg", alt="photo2")
+						cite
+							a(href="https://www.behance.net/gallery/27999261/Mountains-Landing-Page-FREE-(psd)", title="title") 
+								b John Scott 
+								|The Fringe
+			form(action="#")
+				h2 contacts
+				p Sign up for our newsletter to receive updates
+				input(type="text" placeholder="Name")
+				input(type="text" placeholder="Phone")
+				input(type="text" placeholder="E-mail")
+				button(type="submit") send
+		footer
+			.container
+				p All rights reserved 2015
+				.social
+				.contactNumber +38(067)800-2734

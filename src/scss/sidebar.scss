@@ -1,0 +1,33 @@
+.sidebar {
+	width: 129px;
+	min-height: 600px;
+	display: flex;
+	background-color: #20282E;
+	flex-direction: column;
+	.avatar{
+		height: 60px;
+	}
+	.separator:after {
+		content: "";
+		background-image: url("../img/sprite.svg#separator");
+		width: 25px;
+		height: 5px;
+		#separator{
+			fill: white;
+		}
+	}
+}
+
+.arrowIcon {
+	width: 50px;
+	height: 50px;
+	background-image: url("../img/sprite.svg#separator");
+	background-color: pink;
+	background-size: contain;
+	stroke: #000;
+}
+.greyArrow svg {
+	fill: grey;
+	width: 10px;
+	height: 10px;
+}
