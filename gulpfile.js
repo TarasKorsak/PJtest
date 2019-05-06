@@ -20,6 +20,10 @@ const paths = {
         src: './src/assets/img/**/*.*',
         dist: './dist/img'
     },
+    fonts: { 
+        src: './src/assets/fonts/**/*.*',
+        dist: './dist/fonts'
+    },
     scripts: {
         src: './src/*.js',
         dist: './dist/js/'
@@ -34,6 +38,7 @@ const paths = {
 function watch() {
     gulp.watch(paths.styles.src, styles);
     gulp.watch(paths.pug.src, pugToHtml);
+    gulp.watch(paths.images.src, images);
     gulp.watch(paths.scripts.src, scripts);
 }
 
@@ -51,6 +56,11 @@ function clean() {
 function images() {
     return gulp.src(paths.images.src)
 	      	.pipe(gulp.dest(paths.images.dist));
+}
+
+function fonts() {
+    return gulp.src(paths.fonts.src)
+	      	.pipe(gulp.dest(paths.fonts.dist));
 }
 
 function pugToHtml() {
@@ -78,10 +88,11 @@ exports.styles = styles;
 exports.scripts = scripts;
 exports.clean = clean;
 exports.images = images;
+exports.fonts = fonts;
 exports.pugToHtml = pugToHtml;
 
 gulp.task('default', gulp.series(
     clean,
-    gulp.parallel(images, styles, pugToHtml, scripts),
+    gulp.parallel(images, fonts, styles, pugToHtml, scripts),
     gulp.parallel(watch, server)
 ));

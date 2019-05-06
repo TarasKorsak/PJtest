@@ -3,9 +3,9 @@
 // ---------------------------
 // Font
 
-$mainFont                	: 'PTSans', sans-serif;
-$secondFont         		  : 'Circe', sans-serif;
-$thirdFont								: 'Georgia', serif;
+$mainFont                	: 'OpenSans', sans-serif;
+$secondFont         		  : 'Bringin', sans-serif;
+$thirdFont								: 'LeagueGothic', sans-serif;
 
 // Size
 $mainFontColor           : #101010;
@@ -43,7 +43,10 @@ $border-base             : red;
 // $border-lightex          : #F2F6FC;
 
 
-
+//background Colors
+$bgPrimary 							: #ffffff;
+$bgSecondary 						: #f6f4f4; //About us section
+$bgSubSecondary					: #F8F9FA; //logos section
 
 
 // Colors
@@ -83,14 +86,14 @@ $second: $orange;
 $secondShade: $orangeShade;
 $third: $darkDarkGray;
 
-// Hover effects
-$hoverEffect: 10%;
+// // Hover effects
+// $hoverEffect: 10%;
 
-// Size
-$mainContainer: 140rem;
+// // Size
+// $mainContainer: 140rem;
 
-// Indents updated
-// --------------------------------------------------
-$containerHorIndent: 11.5rem;
-$containerVerIndent: 10rem
+// // Indents updated
+// // --------------------------------------------------
+// $containerHorIndent: 11.5rem;
+// $containerVerIndent: 10rem
 

@@ -28,7 +28,8 @@ body {
 
 *, *:before, *:after { box-sizing: border-box; }
 
-h1, h2, h3, h4, h5, h6, p { margin: 0; }
+h1, h2, h3, h4, h5, h6 {text-transform: uppercase;margin: 0; }
+p { margin: 0; }
 
 a {
 	text-decoration: none;
@@ -54,13 +55,18 @@ ul, li {
 //   }
 // }
 
-// .wrapper {
-//   display: flex;
-//   flex-direction: column;
-//   min-height: 100vh;
-//   margin: 0 auto;
-// }
-
+.wrapper {
+  display: flex;
+  // flex-direction: column;
+  // min-height: 100vh;
+	// margin: 0 auto;
+	justify-content: space-between;
+	// align-items: center;
+}
+.container {
+	width: 1135px;
+	margin: auto;
+}
 // .content-wrapper {
 //   display: flex;
 //   flex-direction: column;
@@ -83,3 +89,79 @@ ul, li {
 //     max-width: smPhoneWidth;
 //   }
 // }
+h3::before {
+	content: '';
+	display: block;
+	background-image: url(../img/waves.png);
+	width: 81px;
+	height: 7px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 0;
+	position: relative;  
+  top: -30px; 
+}
+nav {
+	width: 100%;
+	height: 119px;
+	background-color: rgba(255, 255, 255, .23);
+	position: fixed;
+	top: 0;
+	.logo{
+		font-size: 27px;
+		font-family: $secondFont;
+		color: #95a5ad;
+		text-transform: capitalize;
+		span {
+			color: #36aeea;
+		}
+	}
+	ul {
+		// margin-left: 100px;
+	}
+	// ul::before {
+	// 	content: 'Moun';
+	// 	display: block;
+	// }
+	// ul::after {
+	// 	content: 'tains';
+	// 	display: block;
+	// }
+	.menu li{
+		color: #9daeb6;
+		font-size: 12px;
+		font-family: $mainFont;
+		text-transform: uppercase;
+		font-weight: bold;
+		display: inline-block;
+	}
+}
+
+.hero {
+	width: 100%;
+	height: 749px;
+	// border: 10px solid #000;
+	background-image: url("../img/hero_bg_border.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 50%;
+	// background: green;
+	.container {
+		padding-top: 295px;
+	}
+}
+.about {
+	width: 100%;
+	height: 667px;
+	// background: $bgSecondary;
+	background-image: url("../img/world_map_big_dots.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+	.container {
+		padding-top: 254px;
+	}
+	img {
+		position: absolute;
+	}
+}

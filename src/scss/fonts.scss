@@ -1,32 +1,30 @@
-// @font-face {
-// 	font-family: $mainFont;
-// 	src: url('./assets/fonts/PTSans-Regular.woff2') format('woff2'),
-// 				url('./assets/fonts/PTSans-Regular.woff') format('woff');
-// 	font-weight: normal;
-// 	font-style: normal;
-// }
+@font-face {
+  font-family: 'Bringin';
+  src: url('../fonts/Bringin.woff2') format('woff2'),
+      url('../fonts/Bringin.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+	font-family: 'OpenSans';
+	src: url('../fonts/OpenSans.woff2') format('woff2'),
+			url('../fonts/OpenSans.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
 
-// @font-face {
-//   font-family: $mainFont;
-//   src: url('./assets/fonts/PTSans-Bold.woff2') format('woff2'),
-// 				url('./assets/fonts/PTSans-Bold.woff') format('woff');
-//   font-weight: bold;
-//   font-style: normal;
-// }
+@font-face {
+  font-family: 'OpenSans';
+  src: url('../fonts/OpenSans-Bold.woff2') format('woff2'),
+			url('../fonts/OpenSans-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
 
-
-// @font-face {
-//   font-family: $secondFont;
-// 	src: url('./assets/fonts/Circe-Bold.woff2') format('woff2'),
-//   			url('./assets/fonts/Circe-Bold.woff') format('woff');
-//   font-weight: bold;
-//   font-style: normal;
-// }
-
-// @font-face {
-//   font-family: $thirdFont;
-// 	src: url('./assets/fonts/Georgia-Italic.woff2') format('woff2'),
-//   			url('./assets/fonts/Georgia-Italic.woff') format('woff');
-//   font-weight: normal;
-// 	font-style: italic;
-// }
+@font-face {
+	font-family: 'LeagueGothic';
+	src: url('../fonts/LeagueGothic.woff2') format('woff2'),
+			url('../fonts/LeagueGothic.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}

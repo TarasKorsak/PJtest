@@ -9,33 +9,36 @@ html(lang="en")
 		title test
 	body
 		include pug_components/content.pug
-		nav
-			p.logo
-				span moun
-				|tains
-			+navbar(navItems)
+		nav(class="container wrapper")
+			.wrapper
+				p.logo
+					span moun
+					|tains
+				+navbar(navItems)
 			button.callUs call us
-		hero
-			h1 travel with us
-			p to the Mountains
-			p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta, eveniet consequatur cupiditate iure pariatur esse!
-			button.orderNow order now
+		.hero
+			.container
+				h1 travel with us
+				p to the Mountains
+				p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta, eveniet consequatur cupiditate iure pariatur esse!
+				button.orderNow order now
 		section.about
-			h2 about us
-			p Lorem ipsum dolor sit amet consectetur adipisicing elit. A cupiditate non eaque similique modi natus consequuntur nihil consequatur autem eos!
-			button read more
-			img(src="./img/blog_img1.jpg", alt="img1")
-			img(src="./img/blog_img2.jpg", alt="img2")
+			.container
+				h3 about us
+				p Lorem ipsum dolor sit amet consectetur adipisicing elit. A cupiditate non eaque similique modi natus consequuntur nihil consequatur autem eos!
+				button read more
+				img(src="./img/blog_img1.jpg", alt="img1")
+				img(src="./img/blog_img2.jpg", alt="img2")
 		section.journal
 			h2 our journal
 			.postsBlock
-				img(src="./img/post1.jpg", alt="post1")
+				img(src="./img/post1.jpg", alt="post1", id="post1")
 				article
 					p.title love
 					h3 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
 					p You know how to make best coffee in the universe? Or, maybe you’re very good in designing gloves? Tell everyone about your experience and skills.
 					p.number 01
-				img(src="./img/post2.jpg", alt="post2")
+				img(src="./img/post2.jpg", alt="post2", id="post2")
 				article
 					p.title tree
 					h3 Lorem ipsum dolor sit amet, consectetur adipisicing elit,
