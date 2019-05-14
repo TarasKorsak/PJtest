@@ -1,9 +1,10 @@
 @import "./scss/global.scss";
 
-// html {
-  // line-height: $mainLineHeight;
-	// font-size: $mainFontSize;
-	// color: $mainFontColor;
+html {
+  line-height: $mainLineHeight;
+	font-size: $mainFontSize;
+	color: $mainFontColor;
+	font-family: $mainFont;
   // height: 100%;
   // @media screen and (max-width: $desktopWidth) {
 	// 	font-size: 16px;
@@ -14,7 +15,7 @@
   // @media screen and (max-width: $phoneWidth) {
 	// 	font-size: 14px;
   // }
-// }
+}
 
 body {
   // font-family: $mainFont;
@@ -28,7 +29,24 @@ body {
 
 *, *:before, *:after { box-sizing: border-box; }
 
-h1, h2, h3, h4, h5, h6 {text-transform: uppercase;margin: 0; }
+h1, h2, h3, h4, h5, h6 {
+	text-transform: uppercase;
+	margin: 0;
+	color: $headerColor;
+	
+}
+h2 {
+	font-size: 30px;
+	letter-spacing: 3px;
+}
+h3 {
+	font-size: 20px;
+	letter-spacing: 2px;
+}
+h4 {
+	font-size: 16px;
+	letter-spacing: 2.4px;
+}
 p { margin: 0; }
 
 a {
@@ -56,16 +74,39 @@ ul, li {
 // }
 
 .wrapper {
-  display: flex;
+	display: flex;
+	height: 100%;
   // flex-direction: column;
   // min-height: 100vh;
 	// margin: 0 auto;
 	justify-content: space-between;
-	// align-items: center;
+	align-items: center;
 }
 .container {
-	width: 1135px;
+	width: 1140px;
 	margin: auto;
+	height: 100%;
+}
+.btn {
+	padding: 0;
+	display: inline-block;
+  text-align: center;
+	text-decoration: none;
+	border: none;
+	border-radius: 4px;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+.primaryBtn {
+	//  border: solid 1px transparent;
+	color: #ffffff;
+	background-color: $secondShade;
+	// cursor: pointer;
+}
+.callUsBtn {
+	background-color: transparent;
+	color: $second;
+	border: 3px solid $second;
 }
 // .content-wrapper {
 //   display: flex;
@@ -89,7 +130,7 @@ ul, li {
 //     max-width: smPhoneWidth;
 //   }
 // }
-h3::before {
+h2::before, h3::before {
 	content: '';
 	display: block;
 	background-image: url(../img/waves.png);
@@ -99,13 +140,20 @@ h3::before {
 	background-size: cover;
 	background-position: 0;
 	position: relative;  
+}
+h3::before {
   top: -30px; 
+}
+h2::before {
+	left: calc(50% - 41px);
+  top: -36px; 
 }
 nav {
 	width: 100%;
 	height: 119px;
 	background-color: rgba(255, 255, 255, .23);
 	position: fixed;
+	z-index: 30;
 	top: 0;
 	.logo{
 		font-size: 27px;
@@ -113,20 +161,22 @@ nav {
 		color: #95a5ad;
 		text-transform: capitalize;
 		span {
-			color: #36aeea;
+			color: $second;
 		}
 	}
 	ul {
 		// margin-left: 100px;
 	}
-	// ul::before {
-	// 	content: 'Moun';
-	// 	display: block;
-	// }
-	// ul::after {
-	// 	content: 'tains';
-	// 	display: block;
-	// }
+	button {
+		width: 153px;
+		height: 46px;
+		// box-sizing: content-box;
+
+		// margin-top: 27px;
+		font-size: 12px;
+		// color: #fff;
+
+	}
 	.menu li{
 		color: #9daeb6;
 		font-size: 12px;
@@ -148,20 +198,365 @@ nav {
 	// background: green;
 	.container {
 		padding-top: 295px;
+		&>p {
+			width: 434px;
+			height: 47px;
+			font-size: 18px;
+			font-family: $mainFont;
+		}
+		.motto {
+			height: 120px;
+			h1 {
+			margin-top: 43px;
+			margin-bottom: 0;
+			// margin-left: 37px;
+			font-size: 50px;
+			font-family: $mainFont;
+			font-weight: bold;
+			letter-spacing: 6px;
+			color: $mainHeaderColor;
+			position: relative;
+			}
+			p {
+				color: $blueLight;
+				font-family: $secondFont;
+				letter-spacing: 1.31px;
+				font-size: 66px;
+				// padding-top: -15px;
+				position: relative;
+				top: -45px;
+			}
+		}
+	}
+	button {
+		width: 253px;
+		height: 60px;
+		margin-top: 27px;
+		font-size: 14px;
+		// color: #fff;
 	}
 }
+
+//    ---------  ABOUT --------      section
+
 .about {
 	width: 100%;
 	height: 667px;
-	// background: $bgSecondary;
-	background-image: url("../img/world_map_big_dots.png");
-	background-repeat: no-repeat;
-	background-size: cover;
-	position: relative;
+	background: $bgSecondary;
+	// position: relative;
 	.container {
-		padding-top: 254px;
+		height: 100%;
+		padding-top: 234px;
+		background-image: url("../img/world_map_big_dots.png");
+		background-repeat: no-repeat;
+		background-size: 1154px 528px;
+		background-position: 92px 23px;
+		position: relative;
+		p {
+			width: 352px;
+			height: 66px;
+			margin-top: 29px;
+		}
 	}
 	img {
 		position: absolute;
 	}
+	#img1 {
+		top: 277px;
+		left: 453px;
+		z-index: 20;
+	}
+	#img2 {
+		top: -36px;
+		left: 542px;
+		z-index: 10;
+	}
+	button {
+		width: 130px;
+		height: 30px;
+		margin-top: 30px;
+		font-size: 12px;
+	}
 }
+
+//    ---------  JOURNAL --------      section
+
+.journal {
+	background-color: $bgPrimary;
+	.container {
+		height: 1064px;
+		h2 {
+			margin-top: 114px;
+			margin-bottom: 71px;
+			text-align: center;
+		}
+		.postsBlock {
+			display: grid;
+			height: 760px;
+			grid-template-areas:	"post01 post01 post03"
+														"post02 post02 post03";
+			grid-template-columns: 1fr 1fr 1fr;
+			grid-template-rows: 1fr 1fr;
+		}
+		.post {
+			position: relative;
+		}
+		.postContent {
+			position: absolute;
+			background-color: #fff;
+			width: 380px;
+			height: 380px;
+			.title {
+				// margin: auto;
+				text-align: center;
+				font-family: $mainFont;
+				padding-top: 47px;
+				font-size: 11px;
+				font-weight: bold;
+				text-transform: uppercase;
+				color: $secondaryFontColor;
+			}
+			h4 {
+				margin-top: 55px;
+				text-align: center;
+				span {
+					text-decoration: line-through;
+				}
+				&+p {
+					width: 270px;
+					margin: auto;
+					text-align: center;
+					margin-top: 27px;
+					&:last-child {
+						margin-top: 57px;
+					}
+				}
+			}
+			.number {
+				font-size: 14px;
+				text-align: center;
+				// font-weight: bold;
+				font-style: italic;
+				margin-top: 39px;
+				flood-color: #212121;
+			}
+		}
+		#post01 {
+			grid-area: post01;	
+			background: url(../img/spritePost.jpg) 0px -1px no-repeat;
+			.postContent {
+				right: 0;
+			}
+		}
+		#post02 {
+			grid-area: post02;
+			background: url(../img/spritePost.jpg) 1px -1px no-repeat;
+			.postContent {
+				left: 0;
+			}
+		}
+		#post03 {
+			grid-area: post03;
+			background: url(../img/spritePost.jpg) -760px 0px no-repeat;
+			.postContent {
+				bottom: 0;
+			}
+		}
+	}
+}
+
+//    ---------  OFFER --------      section
+
+.offer {
+	width: 100%;
+	height: 650px;
+	background-image: url(../img/offer.jpg);
+	background-repeat: no-repeat;
+	background-size: auto auto;
+	background-position: 50%;
+	.container {
+		h3 {
+			padding-top: 194px;
+		}
+		p {
+			margin-top: 20px;
+			margin-bottom: 25px;
+		}
+		p:last-of-type {
+			color: $second;
+		}
+		form {
+			width: 855px;
+			height: 62px;
+			border: 1px solid #fff;
+			background-color: #fff;
+			border-radius: 4px;
+		}
+		input {
+			width: 300px;
+			padding-left: 21px;
+			border: none;
+			line-height: 34px;
+			vertical-align: middle;
+			font-family: $mainFont;
+			font-size: 16px;
+		}
+		input:last-of-type {
+			border-left: 2px solid #EBEBEB;
+		}
+		button {
+			width: 225px;
+			height: 56px;
+			margin-left: 19px;
+			margin-top: 2px;
+		}
+	}
+}
+
+//    ---------  SCHEMA --------      section
+.schema {
+	.container {
+		height: 737px;
+		background-image: url(../img/schema_bg.png);
+		background-repeat: no-repeat;
+		background-size: 926px 141px;
+		background-position: 100px 100px;
+		h2 {
+			margin-top: 114px;
+			text-align: center;
+		}
+		.wrapper {
+			justify-content: space-around;
+			// position: relative;
+		}
+		.stage {
+			position: relative;
+			width: 205px;
+			height: 115px;
+			margin-top: 110px;
+			h4 {
+				text-transform: none;
+				font-family: $fifthFont;
+				letter-spacing: normal;
+				text-align: center;
+				font-size: 18px;
+				// margin-top: 200px;
+			}
+			p {
+				font-family: $sixthFont;
+				font-size: 16px;
+				text-align: center;
+			}
+			&::before {
+				content: '';
+				display: block;
+				width:179px;
+				height:179px;
+				margin: 0;
+				padding: 0;
+				top: -180px;
+				position: absolute;
+			}
+			&:nth-child(1)::before {
+				background:url('../img/spriteSchemaIcons.jpg') 0px -0px;
+			}
+			&:nth-child(2)::before {
+				background:url('../img/spriteSchemaIcons.jpg') -179px -0px;
+			}
+			&:nth-child(3)::before {
+				background:url('../img/spriteSchemaIcons.jpg') -358px -0px;
+			}
+			&:nth-child(4)::before {
+				background:url('../img/spriteSchemaIcons.jpg') -537px -0px;
+			}
+		}
+	}
+}
+
+//    ---------  OFFER --------      section
+.proposition {
+	height: 1002px;
+	background: url(../img/world_map_small_dots.png) top center no-repeat,
+							url(../img/bg2.jpg) bottom center no-repeat;
+	.container {
+		height: 100%;
+		h2 {
+			margin-top: 114px;
+			text-align: center;
+		}
+		.wrapper {
+			justify-content: space-around;
+			align-items: flex-start;
+			margin-top: 97px;
+		}
+		.card {
+			width: 200px;
+			height: 382px;
+			color: white;
+			font-family: $mainFont;
+			padding-left: 20px;
+			position: relative;
+			.rating {
+				width: 96px;
+				height: 16px;
+				margin-top: 14px;
+			}
+			._5stars {
+				background:	url('../img/5stars.png') -10px -10px no-repeat
+			}
+			._4stars {
+				background:	url('../img/5stars.png') -29px -10px no-repeat
+			}
+			._3stars {
+				background:	url('../img/5stars.png') -48px -10px no-repeat
+			}
+			._2stars {
+				background:	url('../img/5stars.png') -67px -10px no-repeat
+			}
+			.title {
+				font-size: 28px;
+				padding-top: 130px;
+			}
+			p {
+				margin-top: 16px;
+				width: 158px;
+			}
+			.prices {
+				display: flex;
+				height: 62px;
+				width: 180px;
+				justify-content: space-between;
+				// padding-bottom: 20px;
+				align-items: center;
+				position: absolute;
+				bottom: 0;
+				.oldPrice {
+					font-size: 18px;
+					text-decoration: line-through;
+				}
+				.newPrice {
+					font-size: 26px;
+					padding-right: 11px;
+					font-weight: 800;
+				}
+			}
+			&:nth-child(1) {
+				background:	url('../img/spriteCard.jpg') 0px -0px;
+			}
+			&:nth-child(2) {
+				background:url('../img/spriteCard.jpg') -200px -0px;
+			}
+			&:nth-child(3) {
+				background:url('../img/spriteCard.jpg') -400px -0px;
+			}
+			&:nth-child(4) {
+				background:url('../img/spriteCard.jpg') -600px -0px;
+			}
+			&:nth-child(5) {
+				background:url('../img/spriteCard.jpg') -800px -0px;
+			}
+		}
+	}
+}
+
+//    ---------  GALLERY --------      section

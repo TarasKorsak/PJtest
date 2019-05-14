@@ -9,72 +9,57 @@ html(lang="en")
 		title test
 	body
 		include pug_components/content.pug
-		nav(class="container wrapper")
-			.wrapper
-				p.logo
-					span moun
-					|tains
-				+navbar(navItems)
-			button.callUs call us
+		nav
+			.container
+				.wrapper
+					p.logo
+						span moun
+						|tains
+					+navbar(navItems)
+					button(class="btn callUsBtn")  call us
 		.hero
 			.container
-				h1 travel with us
-				p to the Mountains
-				p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta, eveniet consequatur cupiditate iure pariatur esse!
-				button.orderNow order now
+				.motto
+					h1 travel with us
+					p to the Mountains
+				p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incidid
+				button(class="btn primaryBtn") order now
 		section.about
 			.container
 				h3 about us
-				p Lorem ipsum dolor sit amet consectetur adipisicing elit. A cupiditate non eaque similique modi natus consequuntur nihil consequatur autem eos!
-				button read more
-				img(src="./img/blog_img1.jpg", alt="img1")
-				img(src="./img/blog_img2.jpg", alt="img2")
+				p Aliquam sed posuere urna, et gravida nisl. Praesent interdum nisl libero, pretium egestas purus eleifend vitae. Mauris suscipit vel lectus at luctus.
+				button(class="btn primaryBtn") read more
+				img(src="./img/blog_img1.jpg", alt="img1", id="img1")
+				img(src="./img/blog_img2.jpg", alt="img2", id="img2")
 		section.journal
-			h2 our journal
-			.postsBlock
-				img(src="./img/post1.jpg", alt="post1", id="post1")
-				article
-					p.title love
-					h3 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-					p You know how to make best coffee in the universe? Or, maybe you’re very good in designing gloves? Tell everyone about your experience and skills.
-					p.number 01
-				img(src="./img/post2.jpg", alt="post2", id="post2")
-				article
-					p.title tree
-					h3 Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-					p The way to a successful brand is hard, but always very interesting. Share the full story of your project – from the very first day until now.
-					p.number 02
-				img(src="./img/post3.jpg", alt="post3")
-				article
-					p.title WATER
-					h3 LITTLE PIECES OF OUR PROUDNESS
-					p What do you do better than your competitors? What are you proud of? What details and advantages of your product you want people to know about?
-					p.number 1
-		section.order
-			h3 DO YOU WANNA GO?
-			p Aliquam sed posuere urna, et gravida nisl. Praesent interdum nisl libero, pretium egestas purus eleifend vitae. Mauris suscipit vel lectus at luctus.
-			form(action="#")
-				input(type="text" placeholder='Your name')
-				input(type="text" placeholder='Your phone')
-				button(type='submit') order now
-		section.scheme
-			h2 HOW WE WORK
-			.stagesContainer
-				.stage
-					h4 Lorem ipsum dolor sit
-					p amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
-				.stage
-					h4 Lorem ipsum dolor sit
-					p amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
-				.stage
-					h4 Lorem ipsum dolor sit
-					p amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
-				.stage
-					h4 Lorem ipsum dolor sit
-					p amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+			.container
+				h2 our journal
+				.postsBlock
+					+post(postContent)
+		section.offer
+			.container
+				h3 DO YOU WANNA GO?
+				p 
+					!= "Aliquam sed posuere urna, et gravida nisl. Praesent<br>interdum nisl libero, pretium egestas purus eleifend vitae. Mauris suscipit vel lectus at luctus."
+				form(action="#")
+					input(type="text" placeholder='Your name')
+					input(type="text" placeholder='Your phone')
+					button(type='submit', class="btn primaryBtn") order now
+				p
+					!= "&#128274; * Your data will not be transferred"
+		section.schema
+			.container
+				h2 HOW WE WORK
+				.wrapper
+					+stage
+					+stage
+					+stage
+					+stage
 		section.proposition
-			h2 TRAVEL WITH US
-			+card(data)
+			.container
+				h2 TRAVEL WITH US
+				.wrapper
+					+card(data)
 		section.gallery
 			h2 gallery
 			img(src="./img/gallery_group.png", alt="gallery")

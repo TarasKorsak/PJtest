@@ -39,6 +39,7 @@ function watch() {
     gulp.watch(paths.styles.src, styles);
     gulp.watch(paths.pug.src, pugToHtml);
     gulp.watch(paths.images.src, images);
+    gulp.watch(paths.fonts.src, fonts);
     gulp.watch(paths.scripts.src, scripts);
 }
 

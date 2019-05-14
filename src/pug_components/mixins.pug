@@ -1,7 +1,8 @@
 mixin card(data)
 	each val in data
-		div(class='card ' + val.starsQuantity + ' ' + val.header )
-			h3= val.header
+		div(class='card')
+			div(class="rating _"+val.starsQuantity)
+			.title= val.header
 			p= val.description
 			.prices
 				.oldPrice= val.oldPrice
@@ -10,3 +11,15 @@ mixin navbar(some)
 	ul(class='menu')
 		each val in some
 			li= val
+mixin stage
+	div.stage
+		h4 Lorem ipsum dolor sit
+		p amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+mixin post(postContent)
+	each val in postContent
+		div(id="post"+val.postNumber, class="post")
+			.postContent
+				p.title= val.title
+				h4!= val.header
+				p= val.description
+				p.number= val.postNumber
