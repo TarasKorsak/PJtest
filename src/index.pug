@@ -71,29 +71,17 @@ html(lang="en")
 		section.testimonials
 			.container
 				h2 our clients say
-				blockquote
-					p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do  enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse 
-					footer
-						img(src="./img/testimonials1.jpg", alt="photo1")
-						cite
-							a(href="https://www.behance.net/gallery/27999261/Mountains-Landing-Page-FREE-(psd)", title="title") 
-								b Pavliv Yaroslav
-								|Web designer
-				blockquote
-					p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do  enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse 
-					footer
-						img(src="./img/testimonials2.jpg", alt="photo2")
-						cite
-							a(href="https://www.behance.net/gallery/27999261/Mountains-Landing-Page-FREE-(psd)", title="title") 
-								b John Scott 
-								|The Fringe
-			form(action="#")
-				h2 contacts
-				p Sign up for our newsletter to receive updates
-				input(type="text" placeholder="Name")
-				input(type="text" placeholder="Phone")
-				input(type="text" placeholder="E-mail")
-				button(type="submit") send
+				.wrapper
+					+blockquote(bq)
+				//- .blured
+				.contactForm
+					form(action="#")
+						.title contacts
+						p Sign up for our newsletter to receive updates
+						input(type="text" placeholder="Name")
+						input(type="text" placeholder="Phone")
+						input(type="text" placeholder="E-mail")
+						button(type="submit" class="btn primaryBtn") send
 		footer
 			.container
 				p All rights reserved 2015

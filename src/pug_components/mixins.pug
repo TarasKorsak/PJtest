@@ -19,6 +19,7 @@ mixin post(postContent)
 	each val in postContent
 		div(id="post"+val.postNumber, class="post")
 			.postContent
+				.journalIcon
 				p.title= val.title
 				h4!= val.header
 				p= val.description
@@ -31,3 +32,13 @@ mixin svgicon(spriteName, data)
 		div
 			svg.icon
 				use(xlink:href="./img/"+spriteName+"#"+val)
+mixin blockquote(bq)
+	each val in bq
+		blockquote
+			p= val.text
+			footer
+				img(src="./img/"+val.photoname, alt=val.photoname)
+				cite
+					a(href=val.href, title=val.href)
+						b= val.name
+						|#{val.profession}

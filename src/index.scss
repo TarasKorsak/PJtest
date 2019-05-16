@@ -164,18 +164,10 @@ nav {
 			color: $second;
 		}
 	}
-	ul {
-		// margin-left: 100px;
-	}
 	button {
 		width: 153px;
 		height: 46px;
-		// box-sizing: content-box;
-
-		// margin-top: 27px;
 		font-size: 12px;
-		// color: #fff;
-
 	}
 	.menu li{
 		color: #9daeb6;
@@ -190,12 +182,10 @@ nav {
 .hero {
 	width: 100%;
 	height: 749px;
-	// border: 10px solid #000;
 	background-image: url("../img/hero_bg_border.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: 50%;
-	// background: green;
 	.container {
 		padding-top: 295px;
 		&>p {
@@ -209,7 +199,6 @@ nav {
 			h1 {
 			margin-top: 43px;
 			margin-bottom: 0;
-			// margin-left: 37px;
 			font-size: 50px;
 			font-family: $mainFont;
 			font-weight: bold;
@@ -222,7 +211,6 @@ nav {
 				font-family: $secondFont;
 				letter-spacing: 1.31px;
 				font-size: 66px;
-				// padding-top: -15px;
 				position: relative;
 				top: -45px;
 			}
@@ -233,7 +221,6 @@ nav {
 		height: 60px;
 		margin-top: 27px;
 		font-size: 14px;
-		// color: #fff;
 	}
 }
 
@@ -243,7 +230,6 @@ nav {
 	width: 100%;
 	height: 667px;
 	background: $bgSecondary;
-	// position: relative;
 	.container {
 		height: 100%;
 		padding-top: 234px;
@@ -307,7 +293,6 @@ nav {
 			width: 380px;
 			height: 380px;
 			.title {
-				// margin: auto;
 				text-align: center;
 				font-family: $mainFont;
 				padding-top: 47px;
@@ -335,29 +320,32 @@ nav {
 			.number {
 				font-size: 14px;
 				text-align: center;
-				// font-weight: bold;
+				font-family: "Times New Roman", Times, serif;
 				font-style: italic;
 				margin-top: 39px;
-				flood-color: #212121;
+				color: #212121;
 			}
 		}
 		#post01 {
 			grid-area: post01;	
-			background: url(../img/spritePost.jpg) 0px -1px no-repeat;
+			background: url(../img/spritePostIcons.png) -210px 150px no-repeat,
+			url(../img/spritePost.jpg) 0px -1px no-repeat;
 			.postContent {
 				right: 0;
 			}
 		}
 		#post02 {
 			grid-area: post02;
-			background: url(../img/spritePost.jpg) 1px -1px no-repeat;
+			background: url(../img/spritePostIcons.png) 400px 151px no-repeat,
+									url(../img/spritePost.jpg) -380px -0px no-repeat;
 			.postContent {
 				left: 0;
 			}
 		}
 		#post03 {
 			grid-area: post03;
-			background: url(../img/spritePost.jpg) -760px 0px no-repeat;
+			background: url(../img/spritePostIcons.png) -440px 140px no-repeat,
+									url(../img/spritePost.jpg) -380px 0px no-repeat;
 			.postContent {
 				bottom: 0;
 			}
@@ -633,9 +621,139 @@ nav {
 			text-align: center;
 		}
 		.wrapper {
+			height: 205px;
 			justify-content: space-between;
 			align-items: flex-start;
 			margin-top: 132px;
+			margin-bottom: 130px;
+			p {
+				width: 529px;
+				height: 117px;
+				font-size: 18px;
+				position: relative;
+				text-align: justify;
+				&::before {
+					content: "\201c";
+					display: block;
+					text-align: centre;
+					width: 24px;
+					height: 22px;
+					font-size: 92px;
+					line-height: 22px;
+					position: absolute;
+					font-family: $thirdFont;
+				}
+			}
+			img {
+				border-radius: 50%;
+			}
+			footer {
+				display: flex;
+				align-items: center;
+				img, cite{
+					display: block;
+				}
+				a {
+					margin-left: 20px;
+					text-decoration: none;
+					color: $second;
+					font-style: normal;
+				}
+			}
 		}
+		.contactForm {
+			width: 510px;
+			height: 496px;
+			border-radius: 8px;
+			margin: 0 auto;
+			position: relative;
+			z-index: 40;
+			padding: 42px 30px 0 30px;
+			.title {
+				font-family: $mainFont;
+				text-transform: uppercase;
+				color: $second;
+				text-align: center;
+				letter-spacing: 3.6px;
+				font-size: 36px;
+				// margin-top: 42px;
+				font-weight: bold;
+			}
+			p {
+				text-align: center;
+				font-family: "Times New Roman", Times, serif;
+				color: #383e4a;
+				font-size: 17px;
+				margin-bottom: 34px;
+			}
+			input {
+				// width: calc(100% - 60px);
+				width: 100%;
+				height: 60px;
+				border: none;
+				border-radius: 4px;
+				display: block;
+				// margin-right: 30px;
+				// margin-left: 30px;
+				margin-bottom: 20px;
+				padding-left: 20px;
+				&::placeholder {
+					color: #cccccc;
+					font-family: 'Roboto', sans-serif;
+					font-size: 18px;
+				}
+			}
+			button {
+				// width: calc(100%-60px);
+				width: 100%;
+				// padding-left: 30px;
+				height: 60px;
+				// display: block;
+			}
+			&::before {
+				content: '';
+				margin: 0;
+				padding: 0;
+				width: 510px;
+				height: 496px;
+				border-radius: 8px;
+				position: absolute;
+				z-index: -30;
+				left: -2px;
+				top: -2px;
+				background-image: url(../img/footer_bg.png);
+				background-position: 50% -385px;
+				filter: blur(10px);
+				overflow: hidden;
+			}
+			&::after {
+				content: '';
+				margin: 0;
+				padding: 0;
+				width: 510px;
+				height: 496px;
+				border-radius: 8px;
+				position: absolute;
+				left: -2px;
+				top: -2px;
+				background-color: rgb(255, 255, 255, 0.18);
+				z-index: -30;
+				overflow: hidden;
+			}
+		}
+	}
+}
+
+//    ---------  FOOTER --------      section
+
+footer {
+	height: 80px;
+	background: url(../img/footer_bg.jpg) bottom center no-repeat;
+	.container {
+		height: 100%;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		color: rgba(255,255,255, 0.5);
 	}
 }
