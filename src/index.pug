@@ -61,18 +61,16 @@ html(lang="en")
 				.wrapper
 					+card(data)
 		section.gallery
-			h2 gallery
-			img(src="./img/gallery_group.png", alt="gallery")
+			.container
+				h2 gallery
+				.photogrid
+					+images(photos)
 		section.logos
-			img(src="./img/logo1.webp", alt="slack")
-			img(src="./img/logo2.webp", alt="adobe")
-			img(src="./img/logo3.webp", alt="google")
-			img(src="./img/logo4.webp", alt="facebook")
-			img(src="./img/logo5.webp", alt="spotify")
-			img(src="./img/logo6.webp", alt="nike")
+			.container
+				+svgicon("sprite.svg", logos)
 		section.testimonials
-			h2 our clients say
-			.bqcontainer
+			.container
+				h2 our clients say
 				blockquote
 					p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do  enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse 
 					footer

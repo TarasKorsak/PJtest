@@ -23,3 +23,11 @@ mixin post(postContent)
 				h4!= val.header
 				p= val.description
 				p.number= val.postNumber
+mixin images(photos)
+	each val in photos
+		img(src="./img/"+val.name, alt=val.alt, id=val.id)
+mixin svgicon(spriteName, data)
+	each val in data
+		div
+			svg.icon
+				use(xlink:href="./img/"+spriteName+"#"+val)
