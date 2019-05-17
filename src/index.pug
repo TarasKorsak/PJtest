@@ -24,19 +24,19 @@ html(lang="en")
 					p to the Mountains
 				p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incidid
 				button(class="btn primaryBtn") order now
-		section.about
+		section.about(id="our story")
 			.container
 				h3 about us
 				p Aliquam sed posuere urna, et gravida nisl. Praesent interdum nisl libero, pretium egestas purus eleifend vitae. Mauris suscipit vel lectus at luctus.
 				button(class="btn primaryBtn") read more
 				img(src="./img/blog_img1.jpg", alt="img1", id="img1")
 				img(src="./img/blog_img2.jpg", alt="img2", id="img2")
-		section.journal
+		section.journal#journal
 			.container
 				h2 our journal
 				.postsBlock
 					+post(postContent)
-		section.offer
+		section.offer#sevices
 			.container
 				h3 DO YOU WANNA GO?
 				p 
@@ -47,7 +47,7 @@ html(lang="en")
 					button(type='submit', class="btn primaryBtn") order now
 				p
 					!= "&#128274; * Your data will not be transferred"
-		section.schema
+		section.schema#work
 			.container
 				h2 HOW WE WORK
 				.wrapper
@@ -55,12 +55,12 @@ html(lang="en")
 					+stage
 					+stage
 					+stage
-		section.proposition
+		section.proposition#services
 			.container
 				h2 TRAVEL WITH US
 				.wrapper
 					+card(data)
-		section.gallery
+		section.gallery#gallery
 			.container
 				h2 gallery
 				.photogrid
@@ -83,7 +83,14 @@ html(lang="en")
 						input(type="text" placeholder="E-mail")
 						button(type="submit" class="btn primaryBtn") send
 		footer
-			.container
+			.container#contact
 				p All rights reserved 2015
-				.social
+				.socials
+					div
+						a.twitter(href="https://www.linkedin.com/in/taras-korsak-8297b7b3/", title="title")
+					div
+						a.fb(href="https://www.linkedin.com/in/taras-korsak-8297b7b3/", title="title")
+					div.vk
+						a(href="https://www.linkedin.com/in/taras-korsak-8297b7b3/", title="title")
+					//- +socials("sprite.svg", socials)
 				.contactNumber +38(067)800-2734

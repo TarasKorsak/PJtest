@@ -13,13 +13,13 @@
         <div class="wrapper">
           <p class="logo"><span>moun</span>tains</p>
               <ul class="menu">
-                <li>our story</li>
-                <li>services</li>
-                <li>work</li>
-                <li> journal</li>
-                <li>contact</li>
-                <li>work</li>
-                <li>journal</li>
+                <li><a href="#our story" title="our story">our story</a></li>
+                <li><a href="#services" title="services">services</a></li>
+                <li><a href="#work" title="work">work</a></li>
+                <li><a href="#journal" title="journal">journal</a></li>
+                <li><a href="#contact" title="contact">contact</a></li>
+                <li><a href="#gallery" title="gallery">gallery</a></li>
+                <li><a href="#testimonials" title="testimonials">testimonials</a></li>
               </ul>
           <button class="btn callUsBtn"> call us</button>
         </div>
@@ -35,14 +35,14 @@
         <button class="btn primaryBtn">order now</button>
       </div>
     </div>
-    <section class="about">
+    <section class="about" id="our story">
       <div class="container">
         <h3>about us</h3>
         <p>Aliquam sed posuere urna, et gravida nisl. Praesent interdum nisl libero, pretium egestas purus eleifend vitae. Mauris suscipit vel lectus at luctus.</p>
         <button class="btn primaryBtn">read more</button><img src="./img/blog_img1.jpg" alt="img1" id="img1"/><img src="./img/blog_img2.jpg" alt="img2" id="img2"/>
       </div>
     </section>
-    <section class="journal">
+    <section class="journal" id="journal">
       <div class="container">
         <h2>our journal</h2>
         <div class="postsBlock">
@@ -76,7 +76,7 @@
         </div>
       </div>
     </section>
-    <section class="offer">
+    <section class="offer" id="sevices">
       <div class="container">
         <h3>DO YOU WANNA GO?</h3>
         <p> Aliquam sed posuere urna, et gravida nisl. Praesent<br>interdum nisl libero, pretium egestas purus eleifend vitae. Mauris suscipit vel lectus at luctus.
@@ -90,7 +90,7 @@
         </p>
       </div>
     </section>
-    <section class="schema">
+    <section class="schema" id="work">
       <div class="container">
         <h2>HOW WE WORK</h2>
         <div class="wrapper">
@@ -113,7 +113,7 @@
         </div>
       </div>
     </section>
-    <section class="proposition">
+    <section class="proposition" id="services">
       <div class="container">
         <h2>TRAVEL WITH US</h2>
         <div class="wrapper">
@@ -165,7 +165,7 @@
         </div>
       </div>
     </section>
-    <section class="gallery">
+    <section class="gallery" id="gallery">
       <div class="container">
         <h2>gallery</h2>
         <div class="photogrid"><img src="./img/img1.jpg" alt="img1.jpg" id="img1"/><img src="./img/img2.jpg" alt="img2.jpg" id="img2"/><img src="./img/img3.jpg" alt="img3.jpg" id="img3"/><img src="./img/img4.jpg" alt="img4.jpg" id="img4"/><img src="./img/img5.jpg" alt="img5.jpg" id="img5"/><img src="./img/img6.jpg" alt="img6.jpg" id="img6"/>
@@ -212,15 +212,15 @@
         <div class="wrapper">
               <blockquote>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do  enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse </p>
-                <footer><img src="./img/testimonials1.jpg" alt="testimonials1.jpg"/>
+                <div class="bqfooter"><img src="./img/testimonials1.jpg" alt="testimonials1.jpg"/>
                   <cite><a href="https://www.behance.net/gallery/27999261/Mountains-Landing-Page-FREE-(psd)" title="https://www.behance.net/gallery/27999261/Mountains-Landing-Page-FREE-(psd)"><b>Pavliv Yaroslav</b> Web designer</a></cite>
-                </footer>
+                </div>
               </blockquote>
               <blockquote>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do  enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse </p>
-                <footer><img src="./img/testimonials2.jpg" alt="testimonials2.jpg"/>
+                <div class="bqfooter"><img src="./img/testimonials2.jpg" alt="testimonials2.jpg"/>
                   <cite><a href="https://www.behance.net/gallery/27999261/Mountains-Landing-Page-FREE-(psd)" title="https://www.behance.net/gallery/27999261/Mountains-Landing-Page-FREE-(psd)"><b>John Scott</b> The Fringe</a></cite>
-                </footer>
+                </div>
               </blockquote>
         </div>
         <div class="contactForm">
@@ -236,9 +236,13 @@
       </div>
     </section>
     <footer>
-      <div class="container">
+      <div class="container" id="contact">
         <p>All rights reserved 2015</p>
-        <div class="social"></div>
+        <div class="socials">
+          <div><a class="twitter" href="https://www.linkedin.com/in/taras-korsak-8297b7b3/" title="title"></a></div>
+          <div><a class="fb" href="https://www.linkedin.com/in/taras-korsak-8297b7b3/" title="title"></a></div>
+          <div class="vk"><a href="https://www.linkedin.com/in/taras-korsak-8297b7b3/" title="title"></a></div>
+        </div>
         <div class="contactNumber">+38(067)800-2734</div>
       </div>
     </footer>

@@ -10,7 +10,8 @@ mixin card(data)
 mixin navbar(some)
 	ul(class='menu')
 		each val in some
-			li= val
+			li
+				a(href="#"+val, title=val)= val
 mixin stage
 	div.stage
 		h4 Lorem ipsum dolor sit
@@ -36,9 +37,15 @@ mixin blockquote(bq)
 	each val in bq
 		blockquote
 			p= val.text
-			footer
+			.bqfooter
 				img(src="./img/"+val.photoname, alt=val.photoname)
 				cite
 					a(href=val.href, title=val.href)
 						b= val.name
 						|#{val.profession}
+mixin socials(spriteName, data)
+	each val in data
+		div
+			a
+				svg.icon
+					use(xlink:href="./img/"+spriteName+"#"+val)
