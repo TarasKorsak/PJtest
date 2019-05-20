@@ -11,7 +11,7 @@ mixin navbar(some)
 	ul(class='menu')
 		each val in some
 			li
-				a(href="#"+val, title=val)= val
+				a(href="#"+val.replace(/\s/g, ""), title=val)= val
 mixin stage
 	div.stage
 		h4 Lorem ipsum dolor sit

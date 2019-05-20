@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-html(lang="en")
+html(lang="zxx")
 	head
 		meta(charset="UTF-8")
 		meta(name="viewport", content="width=device-width, initial-scale=1.0")
@@ -12,7 +12,7 @@ html(lang="en")
 		nav
 			.container
 				.wrapper
-					p.logo
+					a(href="/", title="Home" class="logo")
 						span moun
 						|tains
 					+navbar(navItems)
@@ -29,8 +29,8 @@ html(lang="en")
 				h3 about us
 				p Aliquam sed posuere urna, et gravida nisl. Praesent interdum nisl libero, pretium egestas purus eleifend vitae. Mauris suscipit vel lectus at luctus.
 				button(class="btn primaryBtn") read more
-				img(src="./img/blog_img1.jpg", alt="img1", id="img1")
-				img(src="./img/blog_img2.jpg", alt="img2", id="img2")
+				img(src="./img/blog_img1.jpg", alt="img1", id="blog_img1")
+				img(src="./img/blog_img2.jpg", alt="img2", id="blog_img2")
 		section.journal#journal
 			.container
 				h2 our journal
@@ -68,13 +68,13 @@ html(lang="en")
 		section.logos
 			.container
 				+svgicon("sprite.svg", logos)
-		section.testimonials
+		section.testimonials#testimonials
 			.container
 				h2 our clients say
 				.wrapper
 					+blockquote(bq)
 				//- .blured
-				.contactForm
+				.contactForm#contact
 					form(action="#")
 						.title contacts
 						p Sign up for our newsletter to receive updates
@@ -83,7 +83,7 @@ html(lang="en")
 						input(type="text" placeholder="E-mail")
 						button(type="submit" class="btn primaryBtn") send
 		footer
-			.container#contact
+			.container
 				p All rights reserved 2015
 				.socials
 					div
