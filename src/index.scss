@@ -10,6 +10,7 @@ html {
 body {
 	margin: 0;
 	padding: 0;
+	overflow-x: hidden;
 }
 
 *, *:before, *:after { box-sizing: border-box; }
@@ -104,7 +105,29 @@ h2::before {
 	left: calc(50% - 41px);
   top: -36px; 
 }
+//    ---------LINK TO GITHUB -----------------
 
+.plate {
+  position: absolute;
+  top: 20px;
+  right: -55px;
+  background-color: rgba(253, 127, 1, 1);
+  transform: rotate(45deg);
+  height: 45px;
+  line-height: 45px;
+  padding: 0 45px;
+	transition: 0.5s;
+	z-index: 100;
+	&:hover {
+		background-color: rgba(253, 127, 1, 0.8);
+		cursor: pointer;
+	}
+	a {
+		text-decoration: none;
+		color: #fff;
+		text-transform: uppercase;
+	}
+}
 //    ---------  NAV --------      section
 
 nav {
